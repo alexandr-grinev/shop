@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset='utf-8'>
+	<meta author='mr.Tesla'>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="semantic/dist/semantic.min.css">
+</head>	
+<body>
+<!-- Header -->
+<header>
+	 
+	<div class="ui stackable grid container" style="padding-top:1.8em">
+		<div class="row">
+			<div class="four wide column">
+				<img src="logo.png" alt="sneakstok.ru">
+			</div>
+			<div class="seven wide column right floated" style="text-align:right">
+				 <span id="searchShow">Поиск<i class="icon search inline-block"></i></span>
+				 <div class="ui right aligned category search" style="display:none">
+				  <div class="ui icon input">
+				    <input class="prompt" type="text" placeholder="Поиск по сайту..." style="border-radius:0">
+				    <i class="icon search"></i>
+				  </div>
+				  <i class="icon remove" style="color:#000;font-size:1.1em;margin-left:0.2em"></i>
+				  <div class="results"></div>
+				</div>
+			</div>
+		</div>
+	</div>	
+	<nav class="ui container">
+		<ul id="mainMenu">
+			<li>
+				<a class="dropdownItem" href="#">Категории <i class="angle down icon"></i></a>
+					<div class="submenu hide">
+						<div class="two wide column">
+						 	<h4>Кроссовки</h4>
+						 	<a href="/">Nike</a>
+						 	<a href="/">New Balance</a>
+						 	<a href="/">Addidas</a>
+						 	<a href="/">Asics</a>
+					 	</div>
+					 	<div class="two wide column">
+						 	<h4>Кеды</h4>
+						 	<a href="/">Converse</a>
+						 	<a href="/">Lacoste</a>
+							<a href="/">Vans</a>
+					 	</div>
+					 	<div class="two wide column">
+						 	<h4>Ботинки</h4>
+						 	<a href="/">Timberland</a>	 	 
+					 	</div>
+					 	<div class="three wide column">
+						 	<h4>Другое</h4>
+						 	<a href="/">Распродажа</a>
+						 	<a href="/">Новые поступления</a>
+						 	<a href="/">Предложение сезона</a>
+						 	<a href="/">Показать все</a>
+					 	</div>
+				 	</div>											 
+			</li>
+			<li><a href="#" class="dropdownItem">Оплата и доставка <i class="angle down icon"></i></a>
+				<div class="submenu hide">
+					<div class="two wide column">
+						<a href="/">Доставка по Москве</a>
+					</div>
+					<div class="two wide column">
+						<a href="/">Доставка по России</a>
+					</div>
+					<div class="three wide column">
+						<a href="/">Доставка в страны СНГ</a>
+					</div>		 
+				</div>	
+			</li>
+			<li><a href="#">Блог</a></li>
+			<li><a href="#">Lookbook</a></li>
+			<li><a href="#">Контакты</a></li>
+			<li><a href="#" style="color:#EF9A00">Скидки</a></li>
+
+		</ul>
+		<div style="float:right;margin-top:-1.25em;text-align:center"> 
+				<span style="font-weight:bold;font-size:1em">КОРЗИНА(0)</span> <i  style="margin-left:0.2em;font-size:1.2em" class="icon cart"></i>
+		</div>
+		<div class="dropdownMenu ui stackable grid" style="display:none"></div>
+	</nav>
+	 	
+</header>
+<!-- Stop header -->
+
+<!-- Help Panel-->
+<div class="ui container" id="helpPanel" style="margin-top:1em;">
+	<div class="ui stackable grid">
+		<div class="twelve wide column category_links">
+			<a href="/" class="link">Air Max 90</a>
+			<a href="/" class="link">Air Max Zero</a>
+			<a href="/" class="link">Air Force</a>
+			<a href="/" class="link">Cortez</a>
+			<a href="/" class="link">Cortez</a>
+			<a href="/" class="link active">Roshe Run</a>
+			<a href="/" class="link">Air Max 90</a>
+			<a href="/" class="link">Air Max Zero</a>
+
+		</div>		
+		<div class="four wide column" style="text-align:right">
+			<select class="dropdown" name="sort"  >
+				<option value="1">Подешевле</option>
+				<option value="2">Подороже</option>
+				<option value="3">Новые</option>
+				<option value="4">Старые</option>
+			</select>		
+		</div>
+	</div>
+	<div class="ui divider" style="margin-top:1.5em;border-color:#eee;border-bottom:0"></div>
+</div>
+<!-- Stop help panel-->
+
+<!-- Products -->
+<div class="ui stackable four column grid container" id="productsPreview">
+  	<div class="column ">
+  		<div class="product-preview">
+  			<div class="buttons">
+	  				<a class="buy" href="">Купить</a>
+	  				<a class="prev" href="/buy">Быстрый просмотр</a>
+  			</div>
+  			<div class="image" style="background:url(https://pp.vk.me/c624123/v624123362/4c561/Tkvn1YLjrBQ.jpg) 50% 50% /cover #eee"></div>
+  			<span style="display:block;margin-top:1em;text-align:center;font-size:1em;">Nike Roshe Run(Black\White)</span>
+  			<span style="display:block;margin-top:1em;text-align:center;font-size:1.1em;font-weight:bold">3 000 <i class="icon rub"></i></span>
+  		</div>
+  	</div>
+  	<div class="column">
+  		<div class="product-preview">
+  			<div class="image" style="height:70%;background:url(https://pp.vk.me/c624123/v624123362/4c525/D27Y9hKonK0.jpg) 50% 50% /cover #eee"></div>
+  			<span style="display:block;margin-top:1em;text-align:center;font-size:1em;">Nike Roshe Run(Blue\White)</span>
+  			<span style="display:block;margin-top:1em;text-align:center;font-size:1.1em;font-weight:bold">3 000 <i class="icon rub"></i></span>
+  		</div>
+  	</div>
+  	<div class="column">
+  		<div class="product-preview">
+  			<div class="image" style="height:70%;background:url(https://pp.vk.me/c624123/v624123362/4c507/FpS4Uk1fXn8.jpg) 50% 50% /cover #eee"></div>
+  			<span style="display:block;margin-top:1em;text-align:center;font-size:1em;">Nike Roshe Run(Grey\Peach)</span>
+  			<span style="display:block;margin-top:1em;text-align:center;font-size:1.1em;font-weight:bold">3 000 <i class="icon rub"></i></span>
+  		</div>
+  	</div>
+  	<div class="column">
+  		<div class="product-preview">
+  			<div class="image" style="height:70%;background:url(https://pp.vk.me/c624123/v624123362/4c25f/fezBPh_04DI.jpg) 50% 50% /cover #eee"></div>
+  			<span style="display:block;margin-top:1em;text-align:center;font-size:1em;">Nike Roshe Run(Grey\Black)</span>
+  			<span style="display:block;margin-top:1em;text-align:center;font-size:1.1em;font-weight:bold">3 000 <i class="icon rub"></i></span>
+  		</div>
+  	</div>
+  	<div class="column">
+  		<div class="product-preview">
+  			<div class="image" style="height:70%;background:url(https://pp.vk.me/c624123/v624123362/4c57f/lK4FtPnBzCM.jpg) 50% 50% /cover #eee"></div>
+  			<span style="display:block;margin-top:1em;text-align:center;font-size:1em;">Nike Roshe Run(Turquoise\Yellow)</span>
+  			<span style="display:block;margin-top:1em;text-align:center;font-size:1.1em;font-weight:bold">3 000 <i class="icon rub"></i></span>
+  		</div>
+  	</div>
+  	<div class="column ">
+  		<div class="product-preview">
+  			<div class="image" style="height:70%;background:url(https://pp.vk.me/c624123/v624123362/4c561/Tkvn1YLjrBQ.jpg) 50% 50% /cover #eee"></div>
+  			<span style="display:block;margin-top:1em;text-align:center;font-size:1em;">Nike Roshe Run(Black\White)</span>
+  			<span style="display:block;margin-top:1em;text-align:center;font-size:1.1em;font-weight:bold">3 000 <i class="icon rub"></i></span>
+  		</div>
+  	</div>
+  	<div class="column">
+  		<div class="product-preview">
+  			<div class="image" style="height:70%;background:url(https://pp.vk.me/c624123/v624123362/4c525/D27Y9hKonK0.jpg) 50% 50% /cover #eee"></div>
+  			<span style="display:block;margin-top:1em;text-align:center;font-size:1em;">Nike Roshe Run(Blue\White)</span>
+  			<span style="display:block;margin-top:1em;text-align:center;font-size:1.1em;font-weight:bold">3 000 <i class="icon rub"></i></span>
+  		</div>
+  	</div>
+  	<div class="column">
+  		<div class="product-preview">
+  			<div class="image" style="height:70%;background:url(https://pp.vk.me/c624123/v624123362/4c525/D27Y9hKonK0.jpg) 50% 50% /cover #eee"></div>
+  			<span style="display:block;margin-top:1em;text-align:center;font-size:1em;">Nike Roshe Run(Blue\White)</span>
+  			<span style="display:block;margin-top:1em;text-align:center;font-size:1.1em;font-weight:bold">3 000 <i class="icon rub"></i></span>
+  		</div>
+  	</div>
+
+   
+</div>
+
+<footer>
+		
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="semantic/dist/semantic.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
