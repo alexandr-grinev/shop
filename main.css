@@ -1,6 +1,6 @@
 img{max-width: 100%;}
 header{background: #fafafa; opacity: 0.99}
-header:hover{opacity: 1}
+header:hover{opacity: 1;}
 header #searchShow{color: #000; font-size: 1em}
 header #searchShow  i{margin-left: 0.4em; color: #333}
 header .search input{min-width: 250px; border-color:#f2f2f2 !important;}
@@ -9,7 +9,8 @@ header .search input{min-width: 250px; border-color:#f2f2f2 !important;}
 .big-container{ padding: 0 4em !important; overflow: hidden;border:1px solid ;}
 .hide{display: none !important}
 .show{display: block;}
-
+.shadow-none{box-shadow: 0 0 0 0 !important}
+.radius-none{border-radius: 0 !important}
 /*Main menu*/
 header{padding: 1em 0 0.5em 0}
 header nav{display: block; padding:2em 0 ;}
@@ -46,7 +47,13 @@ ul#mainMenu > li:first-child > a{padding-left: 0 !important}
 /* Products Preview*/
 #productsPreview{margin-top: 1em}
 .product-preview{height: 22em; position: relative;border:1px solid #fff;}
-.product-preview > .image{height: 22em; height:70%;border: 1px solid #fff}
+.product-preview > .name{display:block;margin-top:1em;text-align:center;font-size:1em;color:#000 !important}
+.product-preview > .prices{display:block;margin-top:1em;text-align:center;font-size:1.1em;font-weight:bold;}
+.product-preview > .prices > .current, .product-preview > .prices > .old{display: inline-block;}
+.product-preview > .prices > .old {font-size: 0.95em; color: #999; text-decoration: line-through;}
+.product-preview > .prices > .current { color:#A35151;}
+
+.product-preview > .image{height: 22em; height:70%;border: 1px solid #fff; display: block;}
 .product-preview:hover > .image{opacity: 0.5}
 
 .product-preview > .buttons { margin-top:4em; display: none;z-index: 1000; height: 22em; position: absolute; width: 100%}
@@ -57,11 +64,20 @@ ul#mainMenu > li:first-child > a{padding-left: 0 !important}
 		margin:0 auto;
 		margin-top:1em;
 		padding:6px 12px;
-		opacity: 0.95
+		opacity: 0.82
 	}
-.product-preview > .buttons > .buy {color: #fff; background: green;}
-.product-preview > .buttons > .prev {color: #fff; background: #555}
+.product-preview > .buttons > .buy {color: #fff; background: #408140;}
+.product-preview > .buttons > .buy:hover{opacity: 0.98; transition:500ms ease-out;}
+.product-preview > .buttons > .prev:hover{opacity: 0.98; transition:500ms ease-out;}
+
+.product-preview > .buttons > .prev {color: #fff; background: #353535}
 .product-preview:hover > .buttons{display: block;  transition: 500ms ease-out;}
 
 
 .product-preview:hover{cursor: pointer; border:1px solid #f0f0f0;}
+
+/*Footer*/
+footer a {display: block; color: #555;padding-top: 0.5em;}
+footer .socials{border-top:1px solid #ddd;}
+footer .socials a{ display: inline-block; font-size: 22px;}
+footer .socials a .instagram:hover{color: #964B00}

@@ -4,7 +4,7 @@
 		$("header").find('.search').fadeIn(200)
 	})
 	$('.search').find('.remove').click(function(){
-		$(this).closest('.search').hide(0);
+		$(this).closest('.search').hide();
 		$('#searchShow').fadeIn(200);
 	})
 
